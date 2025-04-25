@@ -1,0 +1,166 @@
+/* Place page specific styles */
+/* Be sure to link this to your app HTML page! */
+
+/* Styling for the title */
+.app-title {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    font-size: 3rem; /* Increase the size for prominence */
+    font-weight: 700; /* Make the title bold */
+    color: #56828C; /* Use the primary color from the palette */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+/* Center and enhance the appearance on different screens */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2.5rem; /* Slightly smaller font for smaller screens */
+    }
+}
+
+/* Glow effect for titles or highlights */
+.glow-effect {
+    animation: text-glow 2s ease-out forwards;
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 
+            0 0 10px rgba(255, 215, 0, 1),   /* Bright center glow */
+            0 0 20px rgba(255, 215, 0, 0.8), /* Outer glow */
+            0 0 30px rgba(255, 215, 0, 0.6), /* Fainter, further glow */
+            0 0 40px rgba(255, 215, 0, 0.4); /* Distant glow */
+    }
+    100% {
+        text-shadow: 
+            0 0 0 rgba(255, 215, 0, 0); /* Fade back to normal */
+    }
+}
+
+/* Page background */
+body {
+    background: linear-gradient(120deg, #709faa, #F2F2F2); /* Lighter gradient using colors from the palette */
+    font-family: 'Georgia', serif; /* Elegant serif font for readability */
+    color: #0D0D0D; /* Use dark color for text */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Chart containers styling */
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%; /* Set width of charts container */
+}
+
+/* Ensure the charts are responsive */
+#myBarChart, #myPieChart {
+    max-height: 300px; /* Limit the max height of the charts */
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: separate;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #4A90E2; /* Soft Blue header background */
+    color: rgb(0, 0, 0); /* White text */
+}
+
+td {
+    background-color: #f8f9fa; /* Light grey for rows */
+}
+
+/* Modal styling for a clean effect */
+.modal-content {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark grey text for readability */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+button {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background-color: #05A65B; /* Use primary color from palette */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #064014; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Modal styling */
+.modal-content {
+    background-color: #F2F2F2; /* Light background for modals */
+    color: #0D0D0D; /* Dark text */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Refresh button positioning */
+#refreshChartsButton {
+    align-self: flex-end;
+    background-color: #05A65B; /* Green from the palette */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+}
+
+/* Style for the refresh button on hover */
+#refreshChartsButton:hover {
+    background-color: #064014;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design: Make sure the layout adjusts for small screens */
+@media (max-width: 768px) {
+    .charts-container {
+        width: 100%; /* Make the charts container full width */
+        align-items: center;
+    }
+
+    #myBarChart, #myPieChart {
+        max-height: 250px; /* Adjust height for smaller screens */
+    }
+
+    /* Adjust table layout for small screens */
+    table {
+        width: 100%;
+    }
+}
+
+/* Color Theme Swatches */
+.color1 { color: #56828C; }
+.color2 { color: #395359; }
+.color3 { color: #F2F2F2; }
+.color4 { color: #A6A6A6; }
+.color5 { color: #0D0D0D; }

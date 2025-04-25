@@ -1,0 +1,157 @@
+/* Login Page Styles */
+
+/* Gradient background for the page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #709faa, #F2F2F2); /* Lighter gradient using colors from the palette */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    padding: left 100px;
+    padding-left: 100px;
+}
+
+/* Styling for the brand title */
+.brand-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F3F3F3;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* Card Styling for Login Form */
+.card {
+    background-color: rgba(255, 255, 255, 0.95); /* Light, semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#pieChart {
+    max-width: 600px; /* Adjust width as needed */
+    max-height: 600px; /* Adjust height as needed */
+    width: 100%; /* Ensure it remains responsive */
+    height: auto; /* Preserve aspect ratio */
+    margin: 0 auto; /* Center the chart */
+    display: block; /* Ensure proper layout */
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 50fr 1fr; /* Keep the left column larger */
+    min-height: 100vh;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+
+/* Login form floating box */
+.container {
+    background: none; /* Remove the box background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    width: 350px; /* Adjust width */
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+/* Card title */
+.card-title {
+    font-weight: bold;
+    color: #1E2A38; /* Dark text */
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #0A74DA; /* Blue */
+    border-radius: 25px; /* Rounded button */
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #083C80; /* Darker blue */
+    transform: scale(1.03); /* Slight zoom */
+}
+
+/* Account creation link */
+.link-primary {
+    font-weight: bold;
+    color: #0A74DA;
+}
+
+.link-primary:hover {
+    color: #083C80; /* Darker blue */
+}
+
+/* Input fields */
+.form-control {
+    border: none;
+    border-bottom: 2px solid #1E2A38; /* Dark underline */
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 10px 5px;
+}
+
+/* Focus effect */
+.form-control:focus {
+    border-color: #0A74DA;
+    outline: none;
+}
+
+/* Adjust footer text */
+.text-center p {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+
+/* Modal Styling */
+.modal-content {
+    background-color: #F2F2F2; /* Light background for modals */
+    color: #0D0D0D; /* Dark text color */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #56828C; /* Match header background with primary color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    body {
+        justify-content: center; /* Center the form on smaller screens */
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%; /* Take full width on small screens */
+    }
+
+    .brand-logo {
+        font-size: 1.5rem;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Custom Hover Effects */
+button:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: all 0.3s ease;
+}
