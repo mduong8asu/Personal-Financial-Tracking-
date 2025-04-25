@@ -1,5 +1,7 @@
-# Flask App Template
-You can use this template to design and build a flask app for deployment on DigitalOcean or a similar platform.  It should run for you right out of the box.  Be sure to set up your virtual environment first!
+# Personal Financial Tracking App
+Welcome to FinFlow, your all-in-one personal tracking app designed to help you take control of your daily life, habits, and goals. Whether you're looking to build healthier routines, monitor your productivity, or simply gain better insight into your day-to-day patterns, FinFlow offers an intuitive and customizable platform to support your journey.
+
+With powerful tracking tools, smart analytics, and personalized insights, FinFlow empowers you to understand yourself better—so you can make meaningful progress, one step at a time.
 
 ## Run Command
 python run.py
